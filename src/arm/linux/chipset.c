@@ -322,6 +322,20 @@ static const struct special_map_entry qualcomm_hardware_map_entries[] = {
 				.series = cpuinfo_arm_chipset_series_qualcomm_snapdragon,
 				.model = 0,
 		},
+		{
+				/* "Magpie" -> Qualcomm Magpie, though it starts with "SDM" but dose not match the /SDM\d{3}$/ signature */
+				.platform = "SDMMagpie",
+				.series = cpuinfo_arm_chipset_series_qualcomm_snapdragon,
+				.model = 730,
+				.suffix = 'G'
+		},
+		{
+				/* "Magpiep" -> Qualcomm Magpiep, though it starts with "SDM" but dose not match the /SDM\d{3}$/ signature */
+				.platform = "SDMMagpiep",
+				.series = cpuinfo_arm_chipset_series_qualcomm_snapdragon,
+				.model = 730,
+				.suffix = 'G'
+		},
 };
 
 
